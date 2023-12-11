@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(
+        to bottom,
+        #fff 50%,
+        #000 50%
+    ) ;
+}
+.clock{
+    background: #16191e;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 15px solid #242931;
+    box-shadow: 15px 15px 35px rgb(0, 0, 0.2);
+    inset: 0 0 35px rgba(0,0,0,0.4);
+    position: relative;
+}
+.hand{
+    position: absolute;
+    background: white;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    margin: auto;
+}
+.hour{
+    height: 60px;
+    width: 10px;
+    top: 100px;
+}
+.minute{
+    height: 80px;
+    width: 5px;
+    top: 80px;
+}
+.second{
+    height: 90px;
+    width: 3px;
+    top: 70px;
+    background: #2987e4;
+}
